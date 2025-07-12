@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="signup-container">
+                <form action="#">
+                    <h2 id="sign-in-tag">Sign In</h2>
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="text" id="pass" placeholder="Password">
+                    <button>Sign in</button>
+                </form>           
+            </div>
+            <h4>or</h4>
+            <div class="social-media-box">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-google' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+            </div>
+            <button id="sign-up">Sign up</button>
+        </div>
+    </div>
+
+    <script>
+        const sign_up=document.getElementById('sign-up');
+        const left_container=document.getElementById('left-container');
+
+        sign_up.addEventListener('click',()=>{
+            left_container.style.classList.add('.left-container-active');
+            console.log("Button Clicked");
+        })
+    </script>
+</body>
+</html>

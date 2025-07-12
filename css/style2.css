@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parentDiv{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+.child1{
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    background-color: aliceblue;
+}
